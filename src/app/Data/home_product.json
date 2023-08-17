@@ -1,0 +1,80 @@
+[
+    {
+        "key": 0,
+        "name": "ԲԺՇԿԱԿԱՆ ԱՆՁԵՌՈՑԻԿ ՍՏԵՐԻԼ (ԻՆԴԻՎԻԴՈՒԱԼ)",
+        "sterile": true,
+        "parametrs": {
+            "size": {
+                "from": "7,5 սմ",
+                "to": "7,5 սմ"
+            },
+            "layer": 12,
+            "count": 10
+        }
+    },
+    {
+        "key": 1,
+        "name": "ԲԺՇԿԱԿԱՆ ԱՆՁԵՌՈՑԻԿ ՈՉ ՍՏԵՐԻԼ (ԻՆԴԻՎԻԴՈՒԱԼ)",
+        "sterile": false,
+        "parametrs": {
+            "size": {
+                "from": "7,5 սմ",
+                "to": "7,5 սմ"
+            },
+            "layer": 8,
+            "count": 10
+        }
+    },
+    {
+        "key": 2,
+        "name": "ԲԺՇԿԱԿԱՆ ԱՆՁԵՌՈՑԻԿ ՈՉ ՍՏԵՐԻԼ",
+        "sterile": false,
+        "parametrs": {
+            "size": {
+                "from": "5 սմ",
+                "to": "5 սմ"
+            },
+            "layer": 12,
+            "count": 100
+        }
+    },
+    {
+        "key": 3,
+        "name": "ԲԺՇԿԱԿԱՆ ԱՆՁԵՌՈՑԻԿ ՈՉ ՍՏԵՐԻԼ",
+        "sterile": false,
+        "parametrs": {
+            "size": {
+                "from": "5 սմ",
+                "to": "5 սմ"
+            },
+            "layer": 8,
+            "count": 100
+        }
+    },
+    {
+        "key": 4,
+        "name": "ԲԺՇԿԱԿԱՆ ԱՆՁԵՌՈՑԻԿ ՍՏԵՐԻԼ (ԻՆԴԻՎԻԴՈՒԱԼ)",
+        "sterile": true,
+        "parametrs": {
+            "size": {
+                "from": "5 սմ",
+                "to": "5 սմ"
+            },
+            "layer": 12,
+            "count": 10
+        }
+    },
+    {
+        "key": 5,
+        "name": "ԲԺՇԿԱԿԱՆ ԱՆՁԵՌՈՑԻԿ ՍՏԵՐԻԼ (ԻՆԴԻՎԻԴՈՒԱԼ)",
+        "sterile": true,
+        "parametrs": {
+            "size": {
+                "from": "5 սմ",
+                "to": "5 սմ"
+            },
+            "layer": 8,
+            "count": 10
+        }
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "key": 0,
+        "name": "ԲԺՇԿԱԿԱՆ ԲԻՆՏ ՍՏԵՐԻԼ",
+        "sterile": true,
+        "parametrs": {
+            "sizeOne": {
+                "from": "16 սմ",
+                "to": "10 մ"
+            },
+            "sizeTwo": {
+                "from": "14 սմ",
+                "to": "7 մ"
+            },
+            "sizeThree": {
+                "from": "10 սմ",
+                "to": "5 մ"
+            }
+        }
+    },
+    {
+        "key": 1,
+        "name": "ԲԺՇԿԱԿԱՆ ԲԻՆՏ ՈՉ ՍՏԵՐԻԼ",
+        "sterile": false,
+        "parametrs": {
+            "sizeOne": {
+                "from": "16 սմ",
+                "to": "10 մ"
+            },
+            "sizeTwo": {
+                "from": "14 սմ",
+                "to": "7 մ"
+            },
+            "sizeThree": {
+                "from": "10 սմ",
+                "to": "5 մ"
+            } 
+        }
+    }
+]

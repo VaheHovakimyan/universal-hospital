@@ -1,0 +1,21 @@
+[
+    {
+        "key": 0,
+        "name": "ԲԺՇԿԱԿԱՆ ԹԱՆԶԻՖ ՈՉ ՍՏԵՐԻԼ",
+        "sterile": false,
+        "parametrs": {
+            "sizeOne": {
+                "from": "90 սմ",
+                "to": "3 մ"
+            },
+            "sizeTwo": {
+                "from": "90 սմ",
+                "to": "5 մ"
+            },
+            "sizeThree": {
+                "from": "90 սմ",
+                "to": "10 մ"
+            } 
+        }
+    }
+]

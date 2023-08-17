@@ -1,0 +1,56 @@
+.home_medical_ster_main_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F4F9FF;
+
+    .home_medical_ster_main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px;
+        width: 80vw;
+
+        .home_medical_ster_text_and_button {
+            width: 37vw;
+
+            .home_medical_ster_title {
+                // width: 40vw;
+                color: #12724F;
+                font-family: Bokonique;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .home_medical_ster_text {
+                color: #1E1E1E;
+                font-family: Bokonique;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .home_medical_ster_see_more_button {
+                display: inline-flex;
+                padding: 20px 38px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 14px;
+                background: #12724F;
+                border: none;
+                color: #FFF;
+                font-family: Bokonique;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+        }
+    }
+}

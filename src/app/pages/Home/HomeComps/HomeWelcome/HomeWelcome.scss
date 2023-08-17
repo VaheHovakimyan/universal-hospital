@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     background-color: #F4F9FF;
+    padding-bottom: 30px;
 
     .home_welcome_elements {
         display: flex;
@@ -63,6 +64,7 @@
                 background-repeat: no-repeat;
                 border-radius: 14px;
                 flex-shrink: 0;
+                position: relative;
                 z-index: 2;
             }
 
@@ -77,6 +79,7 @@
                 padding: 0;
                 margin: 0;
                 border-radius: 366px;
+                z-index: 1;
             }
 
         }
