@@ -1,0 +1,131 @@
+.footer_main {
+    background-color: #12724F;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
+    padding: 50px;
+
+    .footer_elements_flex {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60vw;
+        height: 22vh;
+        padding: 20px;
+
+        .footer_product {
+
+
+            .footer_product_title {
+                color: #FFF;
+                font-family: Bokonique;
+                font-size: 24.75px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                font-variant: all-small-caps;
+                margin: 0;
+            }
+
+            .footer_text_elements {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                // height: 11vh;
+
+                .footer_product_list {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 11vh;
+                    color: #FFF;
+                    font-family: Bokonique;
+                    font-size: 12.375px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 124%;
+                    padding-inline-start: 0px;
+                    // margin: 0;
+                    /* 15.345px */
+                    font-variant: all-small-caps;
+                }
+            }
+
+
+        }
+
+        .footer_contact_with_us {
+
+            .footer_contact_with_us_title {
+                color: #FFF;
+                font-family: Bokonique;
+                font-size: 24.75px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                font-variant: all-small-caps;
+            }
+
+            .footer_text_elements {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 11vh;
+
+                .footer_contact_with_us_element {
+                    display: flex;
+                    // justify-content: center;
+                    align-items: center;
+
+                    .footer_contact_with_us_text {
+                        color: #FFF;
+                        font-family: Bokonique;
+                        font-size: 12.375px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-left: 7px;
+                        // padding: 6px;
+                    }
+                }
+            }
+
+
+        }
+
+        .footer_social_contacts {
+
+            .footer_social_contacts_title {
+                color: #FFF;
+                font-family: Bokonique;
+                font-size: 24.75px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                font-variant: all-small-caps;
+            }
+
+            .footer_text_elements {
+                display: flex;
+                flex-direction: column;
+                height: 11vh;
+
+                .footer_social_contacts_icons {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+
+                    .footer_contacts_icon {
+                        padding-right: 5px;
+                    }
+
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.home_product {
+    .home_product_title {
+        color: #12724F;
+        font-family: Bokonique;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .home_products_block_flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .home_products_block {
+            display: flex;
+            justify-content: space-between;
+            width: 89vw;
+
+            .home_product_card {
+                width: 440px;
+                height: 490px;
+                border-radius: 14px;
+                background: #DDD;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.header_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    .header_main_elements {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 85vw;
+
+        .header_logo {
+            text-align: center;
+        }
+
+        .header_nav_main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60vw;
+            font-style: normal;
+
+            .router_text {
+                text-decoration: none;
+                color: #000;
+                font-family: 'Bokonique Regular';
+                // font: 'Bokonique', normal;
+                font-size: 14px;
+                // font-style: normal;
+                font-style:oblique;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .language_select_block{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .language_icon{
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+
+}
