@@ -1,0 +1,57 @@
+.home_partners_main_block {
+    .home_partners_title {
+        color: #12724F;
+        font-family: Bokonique;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .home_partners_block_flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .home_partners_block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 98vw;
+
+            .home_partners_card_main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 434px;
+                height: 482px;
+                flex-shrink: 0;
+                border-radius: 14px;
+                background: #DDD;
+                margin: 20px;
+            }
+        }
+    }
+
+    .home_partners_see_all_button_block {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .home_partners_see_all_button {
+            display: inline-flex;
+            padding: 20px 26px 20px 34px;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 14px;
+            background: #12724F;
+            border: none;
+            color: #ffffff;
+
+        }
+    }
+
+}

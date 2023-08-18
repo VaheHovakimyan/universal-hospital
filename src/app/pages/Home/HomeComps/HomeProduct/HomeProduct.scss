@@ -61,10 +61,11 @@
                         display: flex;
                         justify-content: center;
                         // padding: 20px;
+                        width: 365px;
 
                         .card_name {
                             // text-align: center;
-                            width: 305px;
+                            // width: 305px;
                             margin: 0;
                             color: #1E1E1E;
                             font-family: Bokonique;
@@ -80,14 +81,14 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        // width: 440px;
+                        // width: 420px;
                         padding: 20px;
 
                         .product_parametrs {
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
-                            width: 363px;
+                            width: 365px;
 
                             .product_size {
 
@@ -126,7 +127,6 @@
                                     padding-right: 5px;
                                 }
                             }
-
 
                         }
                     }
