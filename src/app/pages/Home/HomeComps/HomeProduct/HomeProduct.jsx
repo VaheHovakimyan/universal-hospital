@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import medical_napkin from '../../../../images_icons/medical_napkin.png';
 import sterile_image from '../../../../images_icons/sterile.png';
 import home_product_napkins from '../../../../Data/home_product.json';
@@ -81,6 +82,7 @@ export default function HomeProduct() {
                                 <div className='home_product_card_button_div'>
                                     <button className='home_product_card_button'>ՏԵՍՆԵԼ ԱՎԵԼԻՆ</button>
                                 </div>
+
                             </div>
                         )
                     })}
@@ -90,9 +92,11 @@ export default function HomeProduct() {
             </aside>
 
             <div className='home_product_see_all_button_div'>
-                <button className='home_product_see_all_button'>
-                    ՏԵՍՆԵԼ ԱՄԲՈՂՋԸ
-                </button>
+                <Link to="/product/bandages" className="router_text">
+                    <button className='home_product_see_all_button'>
+                        ՏԵՍՆԵԼ ԱՄԲՈՂՋԸ
+                    </button>
+                </Link>
             </div>
         </article>
     )

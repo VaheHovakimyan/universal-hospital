@@ -1,19 +1,14 @@
 .home_contact_main {
-    padding: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
 
     .home_contact_main_elements {
         display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        // width: 100vw;
+        justify-content: space-between;
+        width: 100vw;
 
         .home_contact_left_part {
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // flex-direction: column;
-            // width: 40vw;
-            // height: 50vh;
 
             .home_contact_left_part_text_div {
                 width: 40vw;
@@ -30,20 +25,28 @@
                 }
             }
 
-//                         .home_contact_left_part_map_and_decor{
+            .home_contact_left_part_map_and_decor {
+                position: relative;
 
-//             .home_contact_map{
-//                 // width: 40vw;
-// //                 border-radius: 14px;
-// // background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-// box-shadow: 0px 12px 200px 0px rgba(0, 0, 0, 0.25);
-//             }
-//             }
+                .home_contact_map {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .contact_map_decor {
+                    position: absolute;
+                    top: 52%;
+                    left: 3%;
+                    z-index: 1;
+                }
+            }
         }
 
 
 
         .home_contact_right_part {
+            width: 40vw;
+
             .home_contact_right_part_title {
                 color: #12724F;
                 font-family: Bokonique;
@@ -56,17 +59,13 @@
 
             .home_contact_right_part_contact_div {
                 display: flex;
-                // justify-content: space-between;
-                // align-items: center;
                 flex-direction: column;
 
-                // height: calc(auto + 100px);
                 .home_contact_right_part_input {
-                    width: 25vw;
+                    width: 30vw;
                     height: 30px;
-                    // padding-left: 40px;
                     border: none;
-                    padding: 20px 0px 20px 35px;
+                    padding: 25px 0px 25px 35px;
                     margin: 25px 0px 25px 0px;
                     border-radius: 14px;
                     background: #D9D9D9;
@@ -80,14 +79,11 @@
                 }
 
                 .home_contact_right_part_textarea {
-                    width: 25vw;
-                    // height: 30px;
-                    // padding-left: 40px;
-                    // min-width:min-content;
+                    width: 30vw;
                     resize: vertical;
                     min-height: auto;
                     border: none;
-                    padding: 20px 0px 20px 35px;
+                    padding: 25px 0px 25px 35px;
                     margin: 25px 0px 25px 0px;
                     border-radius: 14px;
                     background: #D9D9D9;
@@ -104,6 +100,7 @@
             .home_contact_right_part_snd_msg_button {
                 display: inline-flex;
                 padding: 20px 70px 20px 66px;
+                margin: 25px 0px 25px 0px;
                 align-items: center;
                 border-radius: 14px;
                 background: #12724F;

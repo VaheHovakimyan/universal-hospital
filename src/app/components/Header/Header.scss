@@ -9,10 +9,13 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        width: 85vw;
+        width: 90vw;
 
         .header_logo {
             text-align: center;
+            .router_text{
+                text-decoration: none;
+            }
         }
 
         .header_nav_main {

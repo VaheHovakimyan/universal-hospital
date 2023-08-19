@@ -1,0 +1,38 @@
+.partners_main_block {
+    .partners_title {
+        color: #12724F;
+        font-family: Bokonique;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .partners_block_flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .partners_block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            // width: 98vw;
+
+            .partners_card_main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 434px;
+                height: 482px;
+                flex-shrink: 0;
+                border-radius: 14px;
+                background: #DDD;
+                margin: 30px;
+            }
+        }
+    }
+
+}

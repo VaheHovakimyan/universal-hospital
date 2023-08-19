@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './HomeWelcome.scss';
 
 
@@ -13,9 +14,13 @@ export default function HomeWelcome() {
                     <p className='home_welcome_text'>
                         Բինտեր, թանզիֆե մանրէազերծված բժշկական անձեռոցիկներ, մանրէազերծված և ոչ մանրէազերծված բժշկական վիրակապեր արտադրող;
                     </p>
-                    <button className='home_welcome_see_more'>
-                        ԿԱՐԴԱԼ ԱՎԵԼԻՆ
-                    </button>
+                    <Link to="/about" className="router_text">
+                        <button className='home_welcome_see_more'>
+
+                            ԿԱՐԴԱԼ ԱՎԵԼԻՆ
+
+                        </button>
+                    </Link>
                 </aside>
 
                 <aside className='home_welcome_right_part'>

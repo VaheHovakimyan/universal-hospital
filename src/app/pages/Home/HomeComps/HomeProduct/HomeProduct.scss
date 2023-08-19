@@ -19,16 +19,12 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            width: 98vw;
 
             .home_product_card {
-                // width: 28vw;
-                // height: 57vh;
                 width: 440px;
                 height: 490px;
                 border-radius: 14px;
                 background: #DDD;
-                // margin-bottom: 40px;
                 margin: 30px;
 
                 .card_sterile_part {
@@ -53,19 +49,14 @@
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    // width: 363px;
                     height: 100px;
-                    // flex-shrink: 0;
 
                     .home_card_name_div {
                         display: flex;
                         justify-content: center;
-                        // padding: 20px;
                         width: 365px;
 
                         .card_name {
-                            // text-align: center;
-                            // width: 305px;
                             margin: 0;
                             color: #1E1E1E;
                             font-family: Bokonique;
@@ -81,7 +72,6 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        // width: 420px;
                         padding: 20px;
 
                         .product_parametrs {
@@ -91,10 +81,6 @@
                             width: 365px;
 
                             .product_size {
-
-                                // display: flex;
-                                // justify-content: center;
-                                // align-items: center;
                                 .product_size_flex {
 
                                     border-radius: 12px;
@@ -137,23 +123,14 @@
 
                 .home_product_card_button_div {
                     display: flex;
-                    // width: 199px;
-                    // height: 67.832px;
-                    // padding: 23px 28px 25.832px 32px;
                     justify-content: center;
                     align-items: center;
-                    // flex-shrink: 0;
-                    // color: #FFFFFF;
+                    // padding: 10px 0px 0px 0px;
 
                     .home_product_card_button {
-                        // display: flex;
                         width: 199px;
                         height: 67.832px;
-                        // padding: 25px;
-                        // padding: 23px 28px 25.832px 32px;
-                        // text-align: center;
-                        // justify-content: center;
-                        // align-items: center;
+                        // padding: 20px 0px 20px 0px;
                         flex-shrink: 0;
                         color: #FFFFFF;
                         border-radius: 14px;
@@ -170,22 +147,35 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 30px;
 
-        .home_product_see_all_button {
-            width: 199px;
-            height: 67.832px;
-
-            color: #FFF;
-            font-family: Bokonique;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            border-radius: 14px;
-            background: #12724F;
-            flex-shrink: 0;
-            border: none;
+        .router_text{
+            .home_product_see_all_button {
+                display: inline-flex;
+                padding: 20px 26px 20px 34px;
+                justify-content: flex-end;
+                align-items: center;
+                color: #FFF;
+                font-family: Bokonique;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border-radius: 14px;
+                background: #12724F;
+                flex-shrink: 0;
+                border: none;
+                cursor: pointer;
+                transition: all 300ms ease-out;
+                border: 2px #12724F solid;
+            }
+    
+            .home_product_see_all_button:hover {
+                color: #12724F;
+                background: #FFF;
+            }
         }
+
+        
     }
 }

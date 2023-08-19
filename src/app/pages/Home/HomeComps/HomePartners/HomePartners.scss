@@ -19,7 +19,7 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            width: 98vw;
+            // width: 98vw;
 
             .home_partners_card_main {
                 display: flex;
@@ -30,7 +30,7 @@
                 flex-shrink: 0;
                 border-radius: 14px;
                 background: #DDD;
-                margin: 20px;
+                margin: 30px;
             }
         }
     }
@@ -41,17 +41,36 @@
         padding-top: 20px;
         padding-bottom: 20px;
 
-        .home_partners_see_all_button {
-            display: inline-flex;
-            padding: 20px 26px 20px 34px;
-            justify-content: flex-end;
-            align-items: center;
-            border-radius: 14px;
-            background: #12724F;
-            border: none;
+        .router_text{
             color: #ffffff;
+            text-decoration: none;
 
+            .home_partners_see_all_button {
+                display: inline-flex;
+                padding: 20px 26px 20px 34px;
+                justify-content: flex-end;
+                align-items: center;
+                border-radius: 14px;
+                background: #12724F;
+                color: #FFF;
+                font-family: Bokonique;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border: none;
+                cursor: pointer;
+                transition: all 300ms ease-out;
+                border: 2px #12724F solid;
+                
+            }
+    
+            .home_partners_see_all_button:hover {
+                color: #12724F;
+                background: #FFF;
+            }
         }
+        
     }
 
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import partner_logo from '../../../../images_icons/partner_logo.png';
 import home_partners from '../../../../Data/home_partners.json';
 import './HomePartners.scss';
@@ -21,7 +22,15 @@ export default function HomePartners() {
             </aside>
 
             <div className='home_partners_see_all_button_block'>
-                <button className='home_partners_see_all_button'>ՏԵՍՆԵԼ ԱՄԲՈՂՋԸ</button>
+                {/* <button className='home_partners_see_all_button'> */}
+                    <Link to="/partners" className="router_text">
+                    <button className='home_partners_see_all_button'>
+                        ՏԵՍՆԵԼ ԱՄԲՈՂՋԸ
+                        </button>
+                    </Link>
+
+
+                {/* </button> */}
             </div>
 
         </article>

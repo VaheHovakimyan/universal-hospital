@@ -1,0 +1,52 @@
+.about_main {
+    .about_title {
+        color: #12724F;
+        font-family: Bokonique;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .lab_man_and_text_flex {
+        display: flex;
+        justify-content: center;
+
+        .lab_man_and_text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 88vw;
+            position: relative;
+            z-index: 2;
+
+            .lab_man_img_and_decor {
+                .lab_man_img{
+                    position: relative;
+                    z-index: 2;
+                }
+                .lab_man_img_decor {
+                    position: absolute;
+                    top:100%;
+                    left: 0%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                }
+            }
+
+            
+
+            .lab_men_text {
+                width: 40vw;
+                color: #1E1E1E;
+                font-family: Bokonique;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+}

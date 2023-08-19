@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import home_medical_ster_img from '../../../../images_icons/home_medical_ster_img.png';
 import './HomeMedicalSterilization.scss';
 
@@ -12,7 +13,10 @@ export default function HomeMedicalSterilization() {
                     <h2 className='home_medical_ster_title'>ԲԺՇԿԱԿԱՆ ՊԱՐԱԳԱՆԵՐԻ ՍՏԵՐԻԼԻԶԱՑՈՒՄ</h2>
                     <p className='home_medical_ster_text'>Մենք առաջարկում ենք բժշկական պարագաների ստերիլիզացում</p>
 
-                    <button className='home_medical_ster_see_more_button'>ԿԱՐԴԱԼ ԱՎԵԼԻՆ</button>
+                    <Link to="/services" className="router_text">
+                        <button className='home_medical_ster_see_more_button'>ԿԱՐԴԱԼ ԱՎԵԼԻՆ</button>
+                    </Link>
+
 
                 </aside>
 
