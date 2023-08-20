@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../Product.scss';
 
 
@@ -10,21 +10,37 @@ export default function ProductsNav() {
         <aside className='product_nav_flex'>
             <div className='product_nav'>
 
-                <Link to="/product/bandages" className='router_text'>
+                <NavLink
+                    style={({ isActive }) => (isActive ? { color: '#12724F' } : { color: '#000000' })}
+                    to="/product/bandages"
+                    className='router_text'
+                >
                     <p>Բինտեր</p>
-                </Link>
+                </NavLink>
 
-                <Link to="/product/tanzifs" className='router_text'>
+                <NavLink
+                    style={({ isActive }) => (isActive ? { color: '#12724F' } : { color: '#000000' })}
+                    to="/product/tanzifs"
+                    className='router_text'
+                >
                     <p>Թանզիֆեր</p>
-                </Link>
+                </NavLink>
 
-                <Link to="/product/napkins" className='router_text'>
+                <NavLink
+                    style={({ isActive }) => (isActive ? { color: '#12724F' } : { color: '#000000' })}
+                    to="/product/napkins"
+                    className='router_text'
+                >
                     <p>Անձեռոցիկներ</p>
-                </Link>
+                </NavLink>
 
-                <Link to="/product/packages" className='router_text'>
+                <NavLink
+                    style={({ isActive }) => (isActive ? { color: '#12724F' } : { color: '#000000' })}
+                    to="/product/packages"
+                    className='router_text'
+                >
                     <p>Թոփեր</p>
-                </Link>
+                </NavLink>
 
             </div>
         </aside>
