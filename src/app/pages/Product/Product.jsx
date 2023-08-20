@@ -26,21 +26,24 @@ export default function Product() {
 
 
 
-                    <Routes>
-                        <Route path="/bandages" element={
-                            <Bandages />
-                        } />
-                        <Route path="/tanzifs" element={
-                            <Tanzifs />
-                        } />
-                        <Route path="/napkins" element={
-                            <Napkins />
-                        } />
-                        <Route path="/packages" element={
-                            <Packages />
-                        } />
-                    </Routes>
-                {/* </div>
+            <Routes>
+                <Route path="/" element={
+                    <Bandages />
+                } />
+                <Route path="/bandages" element={
+                    <Bandages />
+                } />
+                <Route path="/tanzifs" element={
+                    <Tanzifs />
+                } />
+                <Route path="/napkins" element={
+                    <Napkins />
+                } />
+                <Route path="/packages" element={
+                    <Packages />
+                } />
+            </Routes>
+            {/* </div>
 
             </aside> */}
 

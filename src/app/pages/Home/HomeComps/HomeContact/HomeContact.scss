@@ -1,7 +1,110 @@
+// Templates
+
+%valid_invalid_text{
+    .invalid_text {
+        color: rgb(240, 0, 0);
+        font-size: 12px;
+        margin: 0px;
+        font-weight: 600;
+        .invalid_valid_text{
+            margin-left: 12px;
+        }
+    }
+
+
+    .valid_text {
+        visibility: hidden;
+        font-size: 12px;
+        margin: 0px;
+        .invalid_valid_text{
+            margin-left: 12px;
+        }
+    }
+}
+
+%popupStyle {
+    .close_button {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+
+    .popup_text_div {
+        .thx_title {
+            color: #12724F;
+            font-family: Bokonique;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+
+        .popup_text {
+            color: #1D2130;
+            font-family: Bokonique;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 20px 0px 20px 0px;
+            text-align: center;
+        }
+    }
+
+    .correct {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .correct_circle {
+            position: relative;
+        }
+
+        .correct_middle_vector {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+    }
+}
+
+
+// Style
+
 .home_contact_main {
     display: flex;
     justify-content: center;
     padding: 100px 0px 100px 0px;
+    position: relative;
+
+    .popup_main_hidden {
+        border-radius: 20px;
+        background: #FFF;
+        position: absolute;
+        top: -200%;
+        padding: 60px;
+        border: 1px gray solid;
+        transition: all 1s ease-out;
+        z-index: 3;
+        visibility: hidden;
+        @extend %popupStyle;
+    }
+
+    .popup_main {
+        border-radius: 20px;
+        background: #FFF;
+        position: absolute;
+        top:10%;
+        padding: 60px;
+        border: 1px gray solid;
+        transition: all 1s ease-out;
+        z-index: 3;
+        @extend %popupStyle;
+
+    }
 
     .home_contact_main_elements {
         display: flex;
@@ -26,6 +129,7 @@
             }
 
             .home_contact_left_part_map_and_decor {
+                user-select: none;
                 position: relative;
 
                 .home_contact_map {
@@ -66,7 +170,7 @@
                     height: 30px;
                     border: none;
                     padding: 25px 0px 25px 35px;
-                    margin: 25px 0px 25px 0px;
+                    margin: 20px 0px 20px 0px;
                     border-radius: 14px;
                     background: #D9D9D9;
                     color: rgba(25, 40, 65, 0.60);
@@ -77,6 +181,9 @@
                     line-height: normal;
                     outline: none;
                 }
+
+                @extend %valid_invalid_text;
+
 
                 .home_contact_right_part_textarea {
                     width: 30vw;
@@ -84,7 +191,7 @@
                     min-height: auto;
                     border: none;
                     padding: 25px 0px 25px 35px;
-                    margin: 25px 0px 25px 0px;
+                    margin: 20px 0px 20px 0px;
                     border-radius: 14px;
                     background: #D9D9D9;
                     color: rgba(25, 40, 65, 0.60);
@@ -94,13 +201,14 @@
                     font-weight: 700;
                     line-height: normal;
                     outline: none;
+                    min-height: 250px;
                 }
             }
 
             .home_contact_right_part_snd_msg_button {
                 display: inline-flex;
                 padding: 20px 70px 20px 66px;
-                margin: 25px 0px 25px 0px;
+                margin: 20px 0px 20px 0px;
                 align-items: center;
                 border-radius: 14px;
                 background: #12724F;
@@ -111,6 +219,14 @@
                 font-weight: 400;
                 line-height: normal;
                 border: none;
+                border: 2px #12724F solid;
+                cursor: pointer;
+                transition: all 300ms ease-out;
+            }
+
+            .home_contact_right_part_snd_msg_button:hover {
+                color: #12724F;
+                background: #FFF;
             }
         }
     }

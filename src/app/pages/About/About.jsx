@@ -1,4 +1,5 @@
 import lab_men_img from '../../images_icons/lab_man.png';
+import lab_gloves_img from '../../images_icons/lab_gloves.png';
 import './About.scss';
 
 
@@ -37,13 +38,35 @@ export default function About() {
 
             </aside>
 
-            <aside className='lab_gloves_main'>
-                <div className='lab_gloves_text'>
+            <aside className='lab_gloves_main_flex'>
+                <div className='lab_gloves_main'>
+                    <div className='lab_gloves_text'>
+                        Բինտեր, թանզիֆե մանրէազերծված բժշկական անձեռոցիկներ, մանրէազերծված և ոչ մանրէազերծված բժշկական վիրակապեր արտադրող;
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </div>
+                    
+                    <div className='lab_gloves_img_and_decor'>
 
-                </div>
-                <div className='lab_gloves_img_and_decor'>
+                        <img src={lab_gloves_img} alt="lab_gloves_img" className='lab_gloves_img ' />
 
+                        <svg width="366" height="353" viewBox="0 0 366 353" fill="none" xmlns="http://www.w3.org/2000/svg" className='lab_gloves_decor'>
+                            <path d="M366 183C366 149.763 356.948 117.153 339.816 88.6719C322.684 60.1904 298.118 36.9126 268.756 21.3372C239.395 5.76184 206.345 -1.52291 173.156 0.264944C139.967 2.0528 107.892 12.8458 80.3731 31.4852C52.8545 50.1247 30.9318 75.9068 16.9583 106.064C2.98493 136.221 -2.51153 169.614 1.05901 202.659C4.62955 235.704 17.1322 267.152 37.225 293.628C57.3177 320.105 84.2417 340.609 115.107 352.94L137.806 296.122C117.261 287.914 99.3383 274.265 85.9633 256.641C72.5884 239.017 64.2659 218.083 61.8891 196.086C59.5123 174.09 63.1711 151.861 72.4727 131.787C81.7742 111.712 96.3673 94.5502 114.685 82.1426C133.003 69.7351 154.355 62.5506 176.447 61.3605C198.54 60.1704 220.54 65.0196 240.085 75.3875C259.63 85.7554 275.982 101.251 287.386 120.209C298.79 139.168 304.816 160.875 304.816 183H366Z" fill="url(#paint0_linear_28_241)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_28_241" x1="183" y1="0" x2="183" y2="366" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#009962" />
+                                    <stop offset="1" stop-color="#009962" stop-opacity="0.54" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
                 </div>
+
             </aside>
 
         </article>

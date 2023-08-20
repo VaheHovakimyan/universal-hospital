@@ -41,6 +41,7 @@
 
                 .home_product_card_img {
                     margin-top: -50px;
+                    user-select: none;
                 }
 
 
@@ -137,6 +138,7 @@
                         background: #12724F;
                         border: none;
                         cursor: pointer;
+                        user-select: none;
                     }
                 }
             }
@@ -168,6 +170,7 @@
                 cursor: pointer;
                 transition: all 300ms ease-out;
                 border: 2px #12724F solid;
+                user-select: none;
             }
     
             .home_product_see_all_button:hover {

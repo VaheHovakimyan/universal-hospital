@@ -31,7 +31,7 @@
                 font-family: 'Bokonique Regular';
                 // font: 'Bokonique', normal;
                 font-size: 14px;
-                // font-style: normal;
+                font-style: normal;
                 font-style:oblique;
                 font-weight: 700;
                 line-height: normal;
@@ -41,6 +41,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                user-select: none;
                 .language_icon{
                     margin-right: 3px;
                 }
