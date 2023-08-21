@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 
     .product_nav {
         display: flex;
@@ -13,7 +14,6 @@
             text-decoration: none;
             color: #1E1E1E;
             font-family: Bokonique;
-            // font-style:unset;
             font-size: 20px;
             font-style: normal;
             font-weight: 400;

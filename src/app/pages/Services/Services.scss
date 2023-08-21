@@ -1,5 +1,30 @@
 // Templates
 
+
+%valid_invalid_text {
+    .invalid_text {
+        color: rgb(240, 0, 0);
+        font-size: 12px;
+        margin: 0px;
+        font-weight: 600;
+
+        .invalid_valid_text {
+            margin-left: 12px;
+        }
+    }
+
+    .valid_text {
+        visibility: hidden;
+        font-size: 12px;
+        margin: 0px;
+
+        .invalid_valid_text {
+            margin-left: 12px;
+        }
+    }
+}
+
+
 %order_call_style {
     .order_call_elements {
         width: 40vw;
@@ -15,12 +40,13 @@
         .order_call_title {
             color: #12724F;
             font-family: Bokonique;
-            font-size: 64px;
+            font-size: 50px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
             text-transform: uppercase;
             text-align: center;
+            margin: 8px 0px 8px 0px;
         }
 
         .order_call_inputs {
@@ -43,6 +69,8 @@
                     outline: none;
                     width: 17vw;
                 }
+
+                @extend %valid_invalid_text;
             }
 
             .tel_input {
@@ -61,6 +89,8 @@
                 margin: 10px 0px 10px 0px;
             }
 
+            @extend %valid_invalid_text;
+
             .service_name_input {
                 border-radius: 14px;
                 background: rgba(217, 217, 217, 0.85);
@@ -78,6 +108,8 @@
                 border: none;
                 outline: none;
             }
+
+            @extend %valid_invalid_text;
         }
 
         .order_call_btn_div {
@@ -113,11 +145,92 @@
     }
 }
 
+%popupStyle {
+    .close_button {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+
+    .popup_text_div {
+        .thx_title {
+            color: #12724F;
+            font-family: Bokonique;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+
+        .popup_text {
+            color: #1D2130;
+            font-family: Bokonique;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 20px 0px 20px 0px;
+            text-align: center;
+        }
+    }
+
+    .correct {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .correct_circle {
+            position: relative;
+        }
+
+        .correct_middle_vector {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+    }
+}
+
 
 // Style
 
 .services_main {
-    // position: relative;
+    position: relative;
+
+
+    .popup_main_hidden {
+        width: 50vw;
+        border-radius: 20px;
+        background: #FFF;
+        position: absolute;
+        top: -150%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        padding: 60px;
+        border: 1px gray solid;
+        transition: all 1s ease-out;
+        z-index: 3;
+        @extend %popupStyle;
+    }
+
+    .popup_main {
+        width: 50vw;
+        border-radius: 20px;
+        background: #FFF;
+        position: absolute;
+        top:5%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        padding: 60px;
+        border: 1px gray solid;
+        transition: all 1s ease-out;
+        z-index: 3;
+        @extend %popupStyle;
+
+    }
 
     .order_call_main_hidden {
         position: absolute;
@@ -140,7 +253,7 @@
 
     .order_call_main {
         position: absolute;
-        top: 20%;
+        top: 5%;
         left: 50%;
         transform: translate(-50%, 0%);
         display: flex;

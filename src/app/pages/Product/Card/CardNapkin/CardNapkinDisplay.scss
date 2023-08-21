@@ -1,0 +1,108 @@
+.product_card_page_flex {
+    display: flex;
+    justify-content: center;
+
+    .product_card_page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85vw;
+
+        .product_card_page_img {
+            border-radius: 17.742px;
+            background: #DDD;
+            width: 32vw;
+            user-select: none;
+
+            .card_sterile_part {
+                border-radius: 14px;
+                display: flex;
+                justify-content: flex-end;
+
+                .sterile_img_for_null {
+                    width: 440px;
+                    height: 134px;
+                }
+
+            }
+
+            .home_product_card_img_div{
+                display: flex;
+                justify-content: center;
+                .home_product_card_img{
+                    margin-top: -30px;
+                }
+            }
+        }
+
+        .product_card_page_text_div {
+            width: 40vw;
+
+            .product_card_page_title {
+                color: #12724F;
+                font-family: Bokonique;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            .product_card_page_params {
+
+                .product_parametrs {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 365px;
+
+                    .product_size {
+                        .product_size_flex {
+
+                            border-radius: 12px;
+                            border: 1px green solid;
+                            color: #12724F;
+                            font-family: Bokonique;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            padding: 8px;
+
+                            .home_product_card_size_text {
+                                padding-left: 5px;
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+
+                    .product_layer {
+                        .home_product_card_size_text {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
+                    }
+
+                    .product_count {
+                        .home_product_card_size_text {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
+                    }
+
+                }
+            }
+
+            .product_card_page_text {
+                color: #1E1E1E;
+                font-family: Bokonique;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+        }
+    }
+
+}
