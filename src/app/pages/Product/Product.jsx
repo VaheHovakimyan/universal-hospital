@@ -8,7 +8,7 @@ import Napkins from './Napkins/Napkins';
 import Packages from './Packages/Packages';
 import ProductsNav from './ProductsNav/ProductsNav';
 import product_napkins from '../../Data/product_napkins.json';
-import CardDisplay from './Card/CardDisplay';
+import CardDisplay from './Card/CardNapkin/CardNapkinDisplay';
 // import Card from './Card/Card';
 // import { BrowserRouter } from 'react-router-dom';
 
@@ -26,6 +26,8 @@ export default function Product() {
 
             {/* <aside className='products_main_flex'>
                 <div className='products_main'> */}
+
+<Outlet />
 
 
 
@@ -50,7 +52,6 @@ export default function Product() {
             </Routes>
 
 
-<Outlet />
             {/* </div>
 
             </aside> */}

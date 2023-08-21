@@ -1,11 +1,12 @@
 // import home_product_napkins from '../../../Data/home_product.json';
 import { Link } from 'react-router-dom';
-import product_napkins from '../../../Data/product_napkins.json';
-import medical_napkin from '../../../images_icons/medical_napkin.png';
-import sterile_image from '../../../images_icons/sterile.png';
+import product_napkins from '../../../../Data/product_napkins.json';
+import medical_napkin from '../../../../images_icons/medical_napkin.png';
+import sterile_image from '../../../../images_icons/sterile.png';
 // import ProductsNav from "../ProductsNav/ProductsNav";
-import '../../Home/HomeComps/HomeProduct/HomeProduct.scss';
+import '../../../Home/HomeComps/HomeProduct/HomeProduct.scss';
 import { useParams } from "react-router-dom";
+import './CardNapkinDisplay.scss';
 
 
 export default function CardDisplay() {
@@ -14,22 +15,18 @@ export default function CardDisplay() {
 
 
     return (
-        <div className='home_product_card' >
- 
-            {/* <h1>{product_napkins[id - 1].name}</h1> {" "} */}
-            <h1></h1>
-            <div className='card_sterile_part'>
-               EXAMPLEPLEPLEPLEPLEPLEPLE {/* {item.sterile ? <img src={sterile_image} alt="sterile_image" /> : <div className='sterile_img_for_null'></div>} */}
+        <div className='product_card_page' >
+
+            <div className='product_card_page_img'>
+                <img src={sterile_image} alt="sterile_image" />
+
+                <img src={medical_napkin} alt="medical_napkin_image" />
             </div>
-            <img src={medical_napkin} alt="medical_napkin" className='home_product_card_img' />
 
-            <div className='home_card_name_parametrs_div'>
+            <div className='product_card_page_text_div'>
+                <h1>{product_napkins[key].name}</h1>
 
-                <div className='home_card_name_div'>
-                    {/* <p className='card_name'>{item.name}</p> */}
-                </div>
-
-                <div className='product_parametrs_flex'>
+                <div className='product_card_page_params'>
                     <div className='product_parametrs'>
                         <div className='product_size'>
                             <div className='product_size_flex'>
@@ -39,7 +36,7 @@ export default function CardDisplay() {
                                     <path d="M4.10947 8.51486V4.48524H5.08042V8.51486H6.41548L4.59495 10.4825L2.77441 8.51486H4.10947ZM4.59495 2.51758L6.41548 4.48524H2.77441L4.59495 2.51758Z" fill="#12724F" />
                                 </svg>
 
-                                {/* <span className='home_product_card_size_text'>{item.parametrs.size.from}</span> */}
+                                <span className='home_product_card_size_text'>{product_napkins[key].parametrs.size.from}</span>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
                                     <path d="M0.253906 10.2539L0.253906 0.746683" stroke="#12724F" stroke-width="0.462357" />
@@ -47,7 +44,7 @@ export default function CardDisplay() {
                                     <path d="M7.76877 6.14468L3.73914 6.14468V5.17373H7.76877V3.83867L9.73642 5.6592L7.76877 7.47974V6.14468ZM1.77148 5.6592L3.73914 3.83867L3.73914 7.47974L1.77148 5.6592Z" fill="#12724F" />
                                 </svg>
 
-                                {/* <span className='home_product_card_size_text'>{item.parametrs.size.to}</span> */}
+                                <span className='home_product_card_size_text'>{product_napkins[key].parametrs.size.to}</span>
 
                             </div>
                         </div>
@@ -62,7 +59,7 @@ export default function CardDisplay() {
                                     </clipPath>
                                 </defs>
                             </svg>
-                            {/* <span className='home_product_card_size_text'>{item.parametrs.layer} շերտ</span> */}
+                            <span className='home_product_card_size_text'>{product_napkins[key].parametrs.layer} շերտ</span>
                         </div>
                         <div className='product_count'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13" fill="none">
@@ -70,17 +67,26 @@ export default function CardDisplay() {
                                 <path d="M3.5 3.5H10.5C10.7652 3.5 11.0196 3.60536 11.2071 3.79289C11.3946 3.98043 11.5 4.23478 11.5 4.5V9.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M5.5 1H13C13.2652 1 13.5196 1.10536 13.7071 1.29289C13.8946 1.48043 14 1.73478 14 2V7.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            {/* <span className='home_product_card_size_text'>{item.parametrs.count} հատ</span> */}
+                            <span className='home_product_card_size_text'>{product_napkins[key].parametrs.count} հատ</span>
                         </div>
                     </div>
                 </div>
 
-
+                <p className='product_card_page_text'>
+                    Բինտեր, թանզիֆե մանրէազերծված բժշկական անձեռոցիկներ, մանրէազերծված և ոչ մանրէազերծված բժշկական վիրակապեր արտադրող;
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                    an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting,
+                </p>
             </div>
 
-            <div className='home_product_card_button_div'>
-                <button className='home_product_card_button'>ՏԵՍՆԵԼ ԱՎԵԼԻՆ</button>
-            </div>
+
+
 
         </div>
     )
