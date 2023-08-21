@@ -9,15 +9,15 @@ export default function HomeContact() {
 
     const valid_email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-    const [messageValid, setMessageValid] = useState(false);
-    const [emailValid, setEmailValid] = useState(false);
-    const [nameValid, setNameValid] = useState(false);
+    const [messageValid,setMessageValid] = useState(false);
+    const [emailValid,setEmailValid] = useState(false);
+    const [nameValid,setNameValid] = useState(false);
 
-    const [messageValue, setMessageValue] = useState("");
-    const [emailValue, setEmailValue] = useState("");
-    const [nameValue, setNameValue] = useState("");
+    const [messageValue,setMessageValue] = useState("");
+    const [emailValue,setEmailValue] = useState("");
+    const [nameValue,setNameValue] = useState("");
 
-    const [popUp, setPopUp] = useState(false);
+    const [popUp,setPopUp] = useState(false);
 
 
     const handleChange = (setState) => (event) => {
@@ -95,7 +95,9 @@ export default function HomeContact() {
 
             <div className='home_contact_main_elements'>
 
+
                 <aside className='home_contact_left_part'>
+
                     <div className='home_contact_left_part_text_div'>
                         <p className='home_contact_left_part_text'>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -123,61 +125,63 @@ export default function HomeContact() {
 
                 </aside>
 
-                <aside className='home_contact_right_part'>
-                    <h2 className='home_contact_right_part_title'>ԿԱՊՆՎԵՔ ՄԵԶ ՀԵՏ ՀԻՄԱ</h2>
-                    <div className='home_contact_right_part_contact_div'>
+                <aside className='home_contact_right_part_flex'>
+                    <div className='home_contact_right_part'>
+                        <h2 className='home_contact_right_part_title'>ԿԱՊՆՎԵՔ ՄԵԶ ՀԵՏ ՀԻՄԱ</h2>
+                        <div className='home_contact_right_part_contact_div'>
 
-                        <input
-                            type="text"
-                            placeholder='Անուն'
-                            className='home_contact_right_part_input'
-                            value={nameValue}
-                            onChange={handleChange(setNameValue)}
-                        />
+                            <input
+                                type="text"
+                                placeholder='Անուն'
+                                className='home_contact_right_part_input'
+                                value={nameValue}
+                                onChange={handleChange(setNameValue)}
+                            />
 
-                        <p className={nameValid ? 'invalid_text' : 'valid_text'}>
-                            <span className='invalid_valid_text'>
-                                Անվան դաշտը դատարկ է
-                            </span>
-                        </p>
+                            <p className={nameValid ? 'invalid_text' : 'valid_text'}>
+                                <span className='invalid_valid_text'>
+                                    Անվան դաշտը դատարկ է
+                                </span>
+                            </p>
 
-                        <input
-                            type="text"
-                            placeholder='Էլ․հասցե'
-                            className='home_contact_right_part_input'
-                            value={emailValue}
-                            onChange={handleChange(setEmailValue)}
-                        />
+                            <input
+                                type="text"
+                                placeholder='Էլ․հասցե'
+                                className='home_contact_right_part_input'
+                                value={emailValue}
+                                onChange={handleChange(setEmailValue)}
+                            />
 
-                        <p className={emailValid ? 'invalid_text' : 'valid_text'}>
-                            <span className='invalid_valid_text'>
-                                Էլ․ հասցեն սխալ է
-                            </span>
-                        </p>
+                            <p className={emailValid ? 'invalid_text' : 'valid_text'}>
+                                <span className='invalid_valid_text'>
+                                    Էլ․ հասցեն սխալ է
+                                </span>
+                            </p>
 
-                        <textarea
-                            name="message"
-                            id="message_textarea"
-                            cols="30"
-                            rows="10"
-                            placeholder='Հաղորդագրություն'
-                            className='home_contact_right_part_textarea'
-                            value={messageValue}
-                            onChange={handleChange(setMessageValue)}
-                        ></textarea>
+                            <textarea
+                                name="message"
+                                id="message_textarea"
+                                cols="30"
+                                rows="10"
+                                placeholder='Հաղորդագրություն'
+                                className='home_contact_right_part_textarea'
+                                value={messageValue}
+                                onChange={handleChange(setMessageValue)}
+                            ></textarea>
 
-                        <p className={messageValid ? 'invalid_text' : 'valid_text'}>
-                            <span className='invalid_valid_text'>
-                                Հաղորդագրության դաշտը դատարկ է
-                            </span>
-                        </p>
+                            <p className={messageValid ? 'invalid_text' : 'valid_text'}>
+                                <span className='invalid_valid_text'>
+                                    Հաղորդագրության դաշտը դատարկ է
+                                </span>
+                            </p>
 
+                        </div>
+
+                        <button
+                            className='home_contact_right_part_snd_msg_button'
+                            onClick={(evt) => { SendMessage(evt) }}
+                        >ՈՒՂԱՐԿԵԼ</button>
                     </div>
-
-                    <button
-                        className='home_contact_right_part_snd_msg_button'
-                        onClick={(evt) => { SendMessage(evt) }}
-                    >ՈՒՂԱՐԿԵԼ</button>
 
                 </aside>
             </div>

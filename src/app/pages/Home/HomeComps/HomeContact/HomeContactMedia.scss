@@ -5,10 +5,27 @@
 
 // Media
 
-/* Laptop media on the Header component */
 
 @include notebook {
     .home_contact_main {
+        .popup_main {
+            width: 50vw;
+
+            .popup_text_div {
+                .thx_title {
+                    font-size: 30px;
+                }
+
+                .popup_text {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .popup_main_hidden {
+            width: 50vw;
+        }
+
         .home_contact_main_elements {
             display: block;
             text-align: center;
@@ -21,10 +38,6 @@
                     display: none;
                 }
 
-                //     .home_contact_map {
-                //         // width: 700px;
-                //         // height: 550px;
-                //     }
             }
 
             .home_contact_left_part {
@@ -32,21 +45,39 @@
                     display: flex;
                     justify-content: center;
                     margin-left: 0px;
-                    // width: 80vw;
                     width: auto;
 
                     .home_contact_left_part_text {
-                        width: 80vw;
+                        width: 90vw;
                     }
                 }
 
-
-
-
-                // display: flex;
-                // justify-content: center;
-                // align-items: center;
             }
+
+            .home_contact_right_part_flex {
+                display: flex;
+                justify-content: center;
+
+                .home_contact_right_part {
+                    .home_contact_right_part_contact_div {
+                        .home_contact_right_part_input {
+                            width: 45vw;
+                        }
+
+                        .home_contact_right_part_textarea {
+                            width: 45vw;
+                        }
+                    }
+
+                    .home_contact_right_part_snd_msg_button {
+                        display: flex;
+                        justify-content: center;
+                        width: calc(45vw + 35px);
+                    }
+
+                }
+            }
+
         }
     }
 }

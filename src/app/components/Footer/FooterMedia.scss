@@ -1,0 +1,75 @@
+// Imports
+
+@import '../../MediaSCSS/Variables.scss';
+@import '../../MediaSCSS/Breakpoints.scss';
+
+// Media
+
+
+@include Ipad_pro {
+    .footer_main_flex{
+        display: flex;
+        justify-content: center;
+        .footer_main{
+            display: block;
+            width: 100vw;
+            .footer_logo{
+                display: flex;
+                justify-content: center;
+            }
+            .footer_elements_flex{
+                display: block;
+                height: auto;
+                .footer_product{
+
+                    .footer_product_title{
+                        width: calc(100vw - 150px);
+                        text-align: center;
+                    }
+                    .footer_text_elements{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: calc(100vw - 100px);
+                    }
+                }
+
+                .footer_contact_with_us{
+                    .footer_contact_with_us_title{
+                        text-align: center;
+                        width: calc(100vw - 150px);
+                    }
+
+                    .footer_text_elements_flex{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            width: calc(100vw - 100px);
+                    }
+                    
+                }
+
+                .footer_social_contacts_flex{
+                    display: flex;
+                    justify-content: center;
+                    width: calc(100vw - 150px);
+                    height: auto;
+                    .footer_social_contacts{
+                        .footer_social_contacts_title{
+                            text-align: center;
+                        }
+                        .footer_text_elements{
+                            .footer_social_contacts_icons{
+                                width: 40vw;
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+        }
+    }
+    
+}

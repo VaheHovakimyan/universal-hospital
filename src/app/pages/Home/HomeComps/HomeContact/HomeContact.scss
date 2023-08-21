@@ -1,12 +1,13 @@
 // Templates
 
-%valid_invalid_text{
+%valid_invalid_text {
     .invalid_text {
         color: rgb(240, 0, 0);
         font-size: 12px;
         margin: 0px;
         font-weight: 600;
-        .invalid_valid_text{
+
+        .invalid_valid_text {
             margin-left: 12px;
         }
     }
@@ -16,7 +17,8 @@
         visibility: hidden;
         font-size: 12px;
         margin: 0px;
-        .invalid_valid_text{
+
+        .invalid_valid_text {
             margin-left: 12px;
         }
     }
@@ -97,7 +99,7 @@
         border-radius: 20px;
         background: #FFF;
         position: absolute;
-        top:10%;
+        top: 10%;
         padding: 60px;
         border: 1px gray solid;
         transition: all 1s ease-out;
@@ -147,88 +149,91 @@
         }
 
 
+        .home_contact_right_part_flex {
+            
+            .home_contact_right_part {
+                width: 40vw;
 
-        .home_contact_right_part {
-            width: 40vw;
-
-            .home_contact_right_part_title {
-                color: #12724F;
-                font-family: Bokonique;
-                font-size: 40px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                font-variant: all-small-caps;
-            }
-
-            .home_contact_right_part_contact_div {
-                display: flex;
-                flex-direction: column;
-
-                .home_contact_right_part_input {
-                    width: 28vw;
-                    height: 30px;
-                    border: none;
-                    padding: 25px 0px 25px 35px;
-                    margin: 20px 0px 20px 0px;
-                    border-radius: 14px;
-                    background: #D9D9D9;
-                    color: rgba(25, 40, 65, 0.60);
+                .home_contact_right_part_title {
+                    color: #12724F;
                     font-family: Bokonique;
-                    font-size: 17.325px;
+                    font-size: 40px;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
-                    outline: none;
+                    font-variant: all-small-caps;
                 }
 
-                @extend %valid_invalid_text;
+                .home_contact_right_part_contact_div {
+                    display: flex;
+                    flex-direction: column;
+
+                    .home_contact_right_part_input {
+                        width: 28vw;
+                        height: 30px;
+                        border: none;
+                        padding: 25px 0px 25px 35px;
+                        margin: 20px 0px 20px 0px;
+                        border-radius: 14px;
+                        background: #D9D9D9;
+                        color: rgba(25, 40, 65, 0.60);
+                        font-family: Bokonique;
+                        font-size: 17.325px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        outline: none;
+                    }
+
+                    @extend %valid_invalid_text;
 
 
-                .home_contact_right_part_textarea {
-                    width: 28vw;
-                    resize: vertical;
-                    min-height: auto;
-                    border: none;
-                    padding: 25px 0px 25px 35px;
+                    .home_contact_right_part_textarea {
+                        width: 28vw;
+                        resize: vertical;
+                        min-height: auto;
+                        border: none;
+                        padding: 25px 0px 25px 35px;
+                        margin: 20px 0px 20px 0px;
+                        border-radius: 14px;
+                        background: #D9D9D9;
+                        color: rgba(25, 40, 65, 0.60);
+                        font-family: Bokonique;
+                        font-size: 17.325px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        outline: none;
+                        min-height: 250px;
+                    }
+                }
+
+                .home_contact_right_part_snd_msg_button {
+                    display: inline-flex;
+                    padding: 20px 70px 20px 66px;
                     margin: 20px 0px 20px 0px;
+                    align-items: center;
                     border-radius: 14px;
-                    background: #D9D9D9;
-                    color: rgba(25, 40, 65, 0.60);
+                    background: #12724F;
+                    color: #FFF;
                     font-family: Bokonique;
-                    font-size: 17.325px;
+                    font-size: 18px;
                     font-style: normal;
-                    font-weight: 700;
+                    font-weight: 400;
                     line-height: normal;
-                    outline: none;
-                    min-height: 250px;
+                    border: none;
+                    border: 2px #12724F solid;
+                    cursor: pointer;
+                    transition: all 300ms ease-out;
                 }
-            }
 
-            .home_contact_right_part_snd_msg_button {
-                display: inline-flex;
-                padding: 20px 70px 20px 66px;
-                margin: 20px 0px 20px 0px;
-                align-items: center;
-                border-radius: 14px;
-                background: #12724F;
-                color: #FFF;
-                font-family: Bokonique;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                border: none;
-                border: 2px #12724F solid;
-                cursor: pointer;
-                transition: all 300ms ease-out;
-            }
-
-            .home_contact_right_part_snd_msg_button:hover {
-                color: #12724F;
-                background: #FFF;
+                .home_contact_right_part_snd_msg_button:hover {
+                    color: #12724F;
+                    background: #FFF;
+                }
             }
         }
+
     }
 
 }
