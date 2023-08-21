@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 // import { Routes, Route } from "react-router-dom";
 // import {Browse}
 import './Product.scss';
@@ -7,6 +7,9 @@ import Tanzifs from './Tanzifs/Tanzifs';
 import Napkins from './Napkins/Napkins';
 import Packages from './Packages/Packages';
 import ProductsNav from './ProductsNav/ProductsNav';
+import product_napkins from '../../Data/product_napkins.json';
+import CardDisplay from './Card/CardDisplay';
+// import Card from './Card/Card';
 // import { BrowserRouter } from 'react-router-dom';
 
 
@@ -38,11 +41,16 @@ export default function Product() {
                 } />
                 <Route path="/napkins" element={
                     <Napkins />
-                } />
+                } >
+                    <Route path=':key' element={<CardDisplay />} />
+                </Route>
                 <Route path="/packages" element={
                     <Packages />
                 } />
             </Routes>
+
+
+<Outlet />
             {/* </div>
 
             </aside> */}
