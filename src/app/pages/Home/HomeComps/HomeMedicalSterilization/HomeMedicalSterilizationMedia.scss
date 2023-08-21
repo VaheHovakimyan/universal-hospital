@@ -1,0 +1,44 @@
+// Imports
+
+@import '../../../../MediaSCSS/Variables.scss';
+@import '../../../../MediaSCSS/Breakpoints.scss';
+
+// Media
+
+/* Laptop media on the Header component */
+
+@include notebook {
+    .home_medical_ster_main_flex {
+        .home_medical_ster_main {
+            
+            .home_medical_ster_img_div {
+                .home_medical_ster_img {
+                    width: 400px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@include Ipad_pro {
+    .home_medical_ster_main_flex {
+        justify-content: center;
+        .home_medical_ster_main {
+            display: block;
+            .home_medical_ster_text_and_button{
+                width: auto;
+                text-align: center;
+            }
+
+            .home_medical_ster_img_div {
+                display: flex;
+                justify-content: center;
+                padding: 100px 0px 10px 0px;
+                .home_medical_ster_decor_img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

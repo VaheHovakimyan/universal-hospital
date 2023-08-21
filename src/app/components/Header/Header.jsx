@@ -1,12 +1,17 @@
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import language_icon from '../../images_icons/lang_icon.png';
 // import language_icons_vector from '../../images_icons/lang_icons_vector.png';
 import './Header.scss';
+import './HeaderMedia.scss';
+import Burger from './Burger/Burger';
+
 
 
 
 export default function Header() {
 
+    const [burgerBool, setBurgerBool] = useState(false);
 
     return (
         <header>
@@ -86,8 +91,27 @@ export default function Header() {
 
                     </nav>
 
+                    <div className='burger_div_block'>
+                            <div
+                                className={burgerBool ? "burger_div_x" : "burger_div"}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setBurgerBool(!burgerBool);
+                                }}
+                            >
+                                <div className={burgerBool ? "burger_x_first" : "burger_line"}></div>
+                                <div className={burgerBool ? "burger_x_second" : "burger_line"}></div>
+                                <div className={burgerBool ? "burger_x_third" : "burger_line"}></div>
+                            </div>
+                        </div>
+
                 </div>
             </article>
+
+            <Burger
+                burgerBool={burgerBool}
+                setBurgerBool={setBurgerBool}
+            />
 
         </header>
     )

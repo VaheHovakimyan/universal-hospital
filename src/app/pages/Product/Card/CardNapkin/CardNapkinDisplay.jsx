@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 import './CardNapkinDisplay.scss';
 
 
-export default function CardDisplay() {
+export default function CardDisplayNapkin() {
 
     const { key } = useParams();
 
@@ -93,8 +93,6 @@ export default function CardDisplay() {
                         but also the leap into electronic typesetting,
                     </p>
                 </div>
-
-
 
 
             </div>

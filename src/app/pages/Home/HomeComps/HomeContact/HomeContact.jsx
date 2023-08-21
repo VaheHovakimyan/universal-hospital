@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import contact_map from '../../../../images_icons/contact_map.png';
 import './HomeContact.scss';
-
+import './HomeContactMedia.scss';
 
 
 

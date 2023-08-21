@@ -1,4 +1,5 @@
 .home_product {
+
     // width: 100vw;
     .home_product_title {
         color: #12724F;
@@ -101,10 +102,23 @@
                                         line-height: normal;
                                         padding: 8px;
 
+
                                         .home_product_card_size_text {
                                             padding-left: 5px;
                                             padding-right: 5px;
                                         }
+                                    }
+                                    
+                                    .product_size_flex_b {
+                                        border-radius: 12px;
+                                        border: 1px #1E1E1E solid;
+                                        color: #1E1E1E;
+                                        font-family: Bokonique;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        padding: 8px;
                                     }
                                 }
 

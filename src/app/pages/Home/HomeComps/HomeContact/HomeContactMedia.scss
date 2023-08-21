@@ -1,0 +1,52 @@
+// Imports
+
+@import '../../../../MediaSCSS/Variables.scss';
+@import '../../../../MediaSCSS/Breakpoints.scss';
+
+// Media
+
+/* Laptop media on the Header component */
+
+@include notebook {
+    .home_contact_main {
+        .home_contact_main_elements {
+            display: block;
+            text-align: center;
+
+            .home_contact_left_part_map_and_decor {
+                display: flex;
+                justify-content: center;
+
+                .contact_map_decor {
+                    display: none;
+                }
+
+                //     .home_contact_map {
+                //         // width: 700px;
+                //         // height: 550px;
+                //     }
+            }
+
+            .home_contact_left_part {
+                .home_contact_left_part_text_div {
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 0px;
+                    // width: 80vw;
+                    width: auto;
+
+                    .home_contact_left_part_text {
+                        width: 80vw;
+                    }
+                }
+
+
+
+
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+            }
+        }
+    }
+}

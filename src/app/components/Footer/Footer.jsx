@@ -1,6 +1,6 @@
 import WebsiteEnd from '../WebsiteEnd/WebsiteEnd';
 import './Footer.scss';
-
+import './FooterMedia.scss';
 
 
 export default function Footer() {

@@ -9,6 +9,10 @@ import Packages from './Packages/Packages';
 import ProductsNav from './ProductsNav/ProductsNav';
 import product_napkins from '../../Data/product_napkins.json';
 import CardDisplay from './Card/CardNapkin/CardNapkinDisplay';
+import CardDisplayNapkin from './Card/CardNapkin/CardNapkinDisplay';
+import CardDisplayTanzif from './Card/CardTanzif/CardTanzif';
+import CardDisplayBandages from './Card/CardBandage/CardBandageDisplay';
+import CardDisplayPackages from './Card/CardPackages/CardPackages';
 // import Card from './Card/Card';
 // import { BrowserRouter } from 'react-router-dom';
 
@@ -27,27 +31,50 @@ export default function Product() {
             {/* <aside className='products_main_flex'>
                 <div className='products_main'> */}
 
-<Outlet />
+            {/* <Outlet /> */}
 
 
 
             <Routes>
-                <Route path="/" element={
-                    <Bandages />
-                } />
+
                 <Route path="/bandages" element={
                     <Bandages />
                 } />
+
+                <Route
+                    path='/bandages/:key'
+                    element={<CardDisplayBandages />}
+                />
+
                 <Route path="/tanzifs" element={
                     <Tanzifs />
                 } />
+
+                <Route
+                    path='/tanzifs/:key'
+                    element={<CardDisplayTanzif />}
+                />
+
                 <Route path="/napkins" element={
                     <Napkins />
-                } >
-                    <Route path=':key' element={<CardDisplay />} />
-                </Route>
+                } />
+
+                <Route
+                    path='/napkins/:key'
+                    element={<CardDisplayNapkin />}
+                />
+
                 <Route path="/packages" element={
                     <Packages />
+                } />
+
+                <Route
+                    path='/packages/:key'
+                    element={<CardDisplayPackages />}
+                />
+
+                <Route path="*" element={
+                    <Bandages />
                 } />
             </Routes>
 

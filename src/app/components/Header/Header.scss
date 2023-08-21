@@ -1,3 +1,38 @@
+// Templates
+
+%burger_line {
+    width: 35px;
+    height: 4px;
+    border-radius: 8px;
+    background-color:  #1e1e1e;
+    transition: all 0.3s linear;
+}
+
+%burger_x_first {
+    width: 35px;
+    height: 4px;
+    border-radius: 8px;
+    background-color:  #1e1e1e;
+    transform: rotate(45deg);
+    transition: all 0.3s linear;
+}
+
+%burger_x_second {
+    margin-top: -3px;
+    height: 0px;
+}
+
+%burger_x_third {
+    width: 35px;
+    height: 4px;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    transform: rotate(-45deg);
+    transition: all 0.3s linear;
+}
+
+//
+
 .header_main {
     display: flex;
     justify-content: center;
@@ -44,6 +79,57 @@
                 user-select: none;
                 .language_icon{
                     margin-right: 3px;
+                }
+            }
+        }
+
+        .burger_div_block {
+            display: none;
+
+            .burger_div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 35px;
+                height: 25px;
+                cursor: pointer;
+
+                .burger_line {
+                    @extend %burger_line;
+                }
+
+                .burger_x_first {
+                    @extend %burger_x_first;
+                }
+
+                .burger_x_second {
+                    @extend %burger_x_second;
+                }
+
+                .burger_x_third {
+                    @extend %burger_x_third;
+                }
+            }
+
+            .burger_div_x {
+                width: 35px;
+                cursor: pointer;
+
+                .burger_line {
+                    @extend %burger_line;
+                }
+
+                .burger_x_first {
+                    @extend %burger_x_first;
+                }
+
+                .burger_x_second {
+                    @extend %burger_x_second;
+                }
+
+                .burger_x_third {
+                    @extend %burger_x_third;
                 }
             }
         }

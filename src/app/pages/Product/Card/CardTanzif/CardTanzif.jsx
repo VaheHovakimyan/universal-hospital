@@ -1,13 +1,13 @@
-import product_bandages from '../../../../Data/product_bandage.json';
+import product_tanzifs from '../../../../Data/product_tanzif.json';
 import sterile_image from '../../../../images_icons/sterile.png';
 import '../../../Home/HomeComps/HomeProduct/HomeProduct.scss';
 import { useParams } from "react-router-dom";
 import '../CardNapkin/CardNapkinDisplay.scss';
-import medical_napkin from '../../../../images_icons/medical_napkin.png';
+import tanzif from '../../../../images_icons/tanzif.png';
 
 
 
-export default function CardDisplayBandages() {
+export default function CardDisplayTanzif() {
 
     const { key } = useParams();
 
@@ -20,18 +20,18 @@ export default function CardDisplayBandages() {
                 <div className='product_card_page_img'>
 
                     <div className='card_sterile_part'>
-                        {product_bandages[key].sterile ? <img src={sterile_image} alt="sterile_image" /> : <div className='sterile_img_for_null'></div>}
+                        {product_tanzifs[key].sterile ? <img src={sterile_image} alt="sterile_image" /> : <div className='sterile_img_for_null'></div>}
                     </div>
 
                     <div className='home_product_card_img_div'>
-                        <img src={medical_napkin} alt="medical_napkin" className='home_product_card_img' />
+                        <img src={tanzif} alt="medical_napkin" className='home_product_card_img' />
                     </div>
 
 
                 </div>
 
                 <div className='product_card_page_text_div'>
-                    <h1 className='product_card_page_title'>{product_bandages[key].name}</h1>
+                    <h1 className='product_card_page_title'>{product_tanzifs[key].name}</h1>
 
                     <div className='product_card_page_params'>
 
@@ -44,7 +44,7 @@ export default function CardDisplayBandages() {
                                         <path d="M4.10947 8.51486V4.48524H5.08042V8.51486H6.41548L4.59495 10.4825L2.77441 8.51486H4.10947ZM4.59495 2.51758L6.41548 4.48524H2.77441L4.59495 2.51758Z" fill="#12724F" />
                                     </svg>
 
-                                    <span className='home_product_card_size_text'>{product_bandages[key].parametrs.sizeOne.from}</span>
+                                    <span className='home_product_card_size_text'>{product_tanzifs[key].parametrs.sizeOne.from}</span>
 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
                                         <path d="M0.253906 10.2539L0.253906 0.746683" stroke="#12724F" stroke-width="0.462357" />
@@ -52,7 +52,7 @@ export default function CardDisplayBandages() {
                                         <path d="M7.76877 6.14468L3.73914 6.14468V5.17373H7.76877V3.83867L9.73642 5.6592L7.76877 7.47974V6.14468ZM1.77148 5.6592L3.73914 3.83867L3.73914 7.47974L1.77148 5.6592Z" fill="#12724F" />
                                     </svg>
 
-                                    <span className='home_product_card_size_text'>{product_bandages[key].parametrs.sizeOne.to}</span>
+                                    <span className='home_product_card_size_text'>{product_tanzifs[key].parametrs.sizeOne.to}</span>
 
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ export default function CardDisplayBandages() {
                                         <path d="M4.10947 8.51486V4.48524H5.08042V8.51486H6.41548L4.59495 10.4825L2.77441 8.51486H4.10947ZM4.59495 2.51758L6.41548 4.48524H2.77441L4.59495 2.51758Z" fill="#12724F" />
                                     </svg>
 
-                                    <span className='home_product_card_size_text'>{product_bandages[key].parametrs.sizeTwo.from}</span>
+                                    <span className='home_product_card_size_text'>{product_tanzifs[key].parametrs.sizeTwo.from}</span>
 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
                                         <path d="M0.253906 10.2539L0.253906 0.746683" stroke="#12724F" stroke-width="0.462357" />
@@ -72,7 +72,7 @@ export default function CardDisplayBandages() {
                                         <path d="M7.76877 6.14468L3.73914 6.14468V5.17373H7.76877V3.83867L9.73642 5.6592L7.76877 7.47974V6.14468ZM1.77148 5.6592L3.73914 3.83867L3.73914 7.47974L1.77148 5.6592Z" fill="#12724F" />
                                     </svg>
 
-                                    <span className='home_product_card_size_text'>{product_bandages[key].parametrs.sizeTwo.to}</span>
+                                    <span className='home_product_card_size_text'>{product_tanzifs[key].parametrs.sizeTwo.to}</span>
 
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ export default function CardDisplayBandages() {
                                         <path d="M4.10947 8.51486V4.48524H5.08042V8.51486H6.41548L4.59495 10.4825L2.77441 8.51486H4.10947ZM4.59495 2.51758L6.41548 4.48524H2.77441L4.59495 2.51758Z" fill="#12724F" />
                                     </svg>
 
-                                    <span className='home_product_card_size_text'>{product_bandages[key].parametrs.sizeThree.from}</span>
+                                    <span className='home_product_card_size_text'>{product_tanzifs[key].parametrs.sizeThree.from}</span>
 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
                                         <path d="M0.253906 10.2539L0.253906 0.746683" stroke="#12724F" stroke-width="0.462357" />
@@ -92,7 +92,7 @@ export default function CardDisplayBandages() {
                                         <path d="M7.76877 6.14468L3.73914 6.14468V5.17373H7.76877V3.83867L9.73642 5.6592L7.76877 7.47974V6.14468ZM1.77148 5.6592L3.73914 3.83867L3.73914 7.47974L1.77148 5.6592Z" fill="#12724F" />
                                     </svg>
 
-                                    <span className='home_product_card_size_text'>{product_bandages[key].parametrs.sizeThree.to}</span>
+                                    <span className='home_product_card_size_text'>{product_tanzifs[key].parametrs.sizeThree.to}</span>
 
                                 </div>
                             </div>

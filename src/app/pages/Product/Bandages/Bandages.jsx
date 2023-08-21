@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import product_bandages from '../../../Data/product_bandage.json';
 import medical_napkin from '../../../images_icons/medical_napkin.png';
 import sterile_image from '../../../images_icons/sterile.png';
@@ -75,7 +76,7 @@ export default function Bandages() {
                                     </div>
 
                                     <div className='home_product_card_button_div'>
-                                        <button className='home_product_card_button'>ՏԵՍՆԵԼ ԱՎԵԼԻՆ</button>
+                                        <Link  to={`/product/bandages/${item.key}`} ><button className='home_product_card_button'>ՏԵՍՆԵԼ ԱՎԵԼԻՆ</button></Link>
                                     </div>
 
                                 </div>

@@ -1,0 +1,62 @@
+// Imports
+
+@import '../../MediaSCSS/Variables.scss';
+@import '../../MediaSCSS/Breakpoints.scss';
+
+// Media
+
+
+@include notebook {
+    .header_main{
+        .header_main_elements{
+            .header_nav_main{
+                .router_text{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@include Ipad_pro {
+    .header_main{
+        .header_main_elements{
+            .header_nav_main{
+                display: none;
+            }
+            .burger_div_block {
+                display: block;
+            }
+        }
+    }
+}
+
+// @include Laptop {
+
+//     .header_main{
+//         .header_main_elements{
+//             .header_nav_main{
+//                 display: none;
+//             }
+//             .burger_div_block {
+//                 display: block;
+//             }
+//         }
+//     }
+//     // .header {
+//         // .header_block {
+           
+//     //     }
+//     // }
+
+// }
+
+@include Bg_mobile {
+    .header{
+        width: 100vw;
+        height: 12vh;
+        .header_block{
+            width: 85vw;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './HomeWelcome.scss';
-
+import './HomeWelcomeMedia.scss';
 
 
 export default function HomeWelcome() {

@@ -1,0 +1,47 @@
+// Imports
+
+@import '../../../../MediaSCSS/Variables.scss';
+@import '../../../../MediaSCSS/Breakpoints.scss';
+
+// Media
+
+/* Laptop media on the Header component */
+
+@include notebook {
+    .home_welcome_block {
+        .home_welcome_elements {
+            .home_welcome_right_part {
+                .home_welcome_main_image {
+                    width: 400px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@include Ipad_pro {
+    .home_welcome_block {
+        .home_welcome_elements {
+            display: block;
+            text-align: center;
+
+            .home_welcome_left_part {
+                .home_welcome_text {
+                    width: auto;
+                }
+            }
+
+
+            .home_welcome_right_part {
+                display: flex;
+                justify-content: center;
+                padding: 100px 0px 10px 0px;
+
+                .home_welcome_image_decor {
+                    display: none;
+                }
+            }
+        }
+    }
+}

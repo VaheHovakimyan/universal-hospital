@@ -12,7 +12,7 @@ import { Outlet } from 'react-router-dom';
 export default function Napkins() {
     return (
         <>
-            <Outlet />
+            {/* <Outlet /> */}
 
             <div className='home_product'>
 
