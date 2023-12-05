@@ -1,6 +1,5 @@
 import { Routes, Route, Outlet } from 'react-router-dom';
 // import { Routes, Route } from "react-router-dom";
-// import {Browse}
 import './Product.scss';
 import Bandages from './Bandages/Bandages';
 import Tanzifs from './Tanzifs/Tanzifs';
